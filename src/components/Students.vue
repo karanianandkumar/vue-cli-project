@@ -1,5 +1,6 @@
 <template>
 <div>
+    <h1>Students Component....</h1>
     <ul>
         <li v-for="(student,index) in studentList" v-bind:key='index'>{{student}}</li>
     </ul>
@@ -16,5 +17,8 @@ export default{
 
 }
 </script>
-<style>
+<style scoped>
+h1{
+    color:yellow;
+}
 </style>
