@@ -1,20 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{title}}</h1>
-    <p>{{greeting()}}</p>
+    <students></students>
   </div>
 </template>
 
 <script>
 export default {
+  props:{
+    msg:String
+  },
   data:function(){
     return {
       title:"First Vue Cli app"
-    }
-  },
-  methods:{
-    greeting:function(){
-      return "Have a great day~!!!.. Don't stop coding....";
     }
   }
 }
